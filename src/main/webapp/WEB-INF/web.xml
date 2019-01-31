@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <display-name>PWI App</display-name>
+
+    <servlet>
+        <servlet-name>AddUserAction</servlet-name>
+        <servlet-class>com.mateusz.servlet.AddUserAction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddUserAction</servlet-name>
+        <url-pattern>/addUser.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindUserAction</servlet-name>
+        <servlet-class>com.mateusz.servlet.FindUserAction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindUserAction</servlet-name>
+        <url-pattern>/findUser.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>com.mateusz.servlet.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SaveScoreDS</servlet-name>
+        <servlet-class>com.mateusz.servlet.SaveScoreDS</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveScoreDS</servlet-name>
+        <url-pattern>/saveScore.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindUserDS</servlet-name>
+        <servlet-class>com.mateusz.servlet.FindUserDS</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindUserDS</servlet-name>
+        <url-pattern>/home.html</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GalleryDS</servlet-name>
+        <servlet-class>com.mateusz.servlet.GalleryDS</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GalleryDS</servlet-name>
+        <url-pattern>/gallery.html</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ContactDS</servlet-name>
+        <servlet-class>com.mateusz.servlet.ContactDS</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ContactDS</servlet-name>
+        <url-pattern>/contact.html</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PlayDS</servlet-name>
+        <servlet-class>com.mateusz.servlet.PlayDS</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PlayDS</servlet-name>
+        <url-pattern>/play.html</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AllStatisticsDS</servlet-name>
+        <servlet-class>com.mateusz.servlet.AllStatisticsDS</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AllStatisticsDS</servlet-name>
+        <url-pattern>/all_statistics.html</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserStatisticsDS</servlet-name>
+        <servlet-class>com.mateusz.servlet.UserStatisticsDS</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserStatisticsDS</servlet-name>
+        <url-pattern>/user_statistics.html</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>

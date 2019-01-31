@@ -1,0 +1,182 @@
+/* Style
+---------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------- */
+
+/* ALL */
+html{overflow-x:hidden;}
+body{margin:0; padding:0; font-size:14px; font-family:Verdana, Geneva, sans-serif; color: #676767; background-color: #000000;}
+h1, h2, h3, h4, h5, h6{font-family:Georgia, "Times New Roman", Times, serif;}
+a{outline:none; text-decoration:none;}
+.clear::before, .clear::after{display:table; content:"";}
+.clear, .clear::after{clear:both;}
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+/* BODY */
+#header {background-color: rgba(255, 255, 255, .25);}
+#header {padding: 0px 0px 0px 15px;}
+#header #logo {margin-top: 10px; text-transform: uppercase;}
+
+
+nav ul {margin: 0; padding: 13px; list-style: none;}
+#mainav ul {text-transform: uppercase;}
+#mainav ul ul {position: absolute; width: 180px;}
+#mainav li {display: inline-block; position: relative; margin: 0 15px 0 0; padding: 0;}
+#mainav li li {width: 100%;margin: 0;}
+#mainav li a {display: block; padding: 15px 0;}
+#mainav li li a {display: block; margin: 0; padding: 10px 15px;}
+#mainav ul ul {visibility: hidden; opacity: 0;}
+#mainav ul li:hover > ul {visibility: visible; opacity: 1;}
+#mainav form { display: none; margin: 20px 0 0 0; padding: 0;}
+#mainav form select {width: 100%; padding: 5px; border: 1px solid;}
+#mainav form select {width: 220px; padding: 5px; border: 1px solid; margin-right: 10px;}
+#mainav form select{color:#FFFFFF; background-color:#000000; border-color:rgba(136,136,136,.5);}
+#mainav li a {color: #FFFFFF;}
+#mainav .active a, #mainav li:hover > a {color: #F4BF4F;}
+#mainav li li a{color: #FFFFFF; background-color: rgba(255, 255, 255, .25); border-color: rgba(0, 0, 0, .6);}
+main {margin-top: 70px; margin-bottom: 70px;}
+article {text-align: justify; padding: 20px; margin: 10px;}
+img {
+    height: auto;
+    max-width: 100%;
+    display:block;
+}
+table {
+    margin: 0 auto;
+}
+article #span {text-align: center;}
+
+footer {border-top: 1px solid; padding: 10px;}
+footer #bgSelector {margin-top: 13px;}
+footer a {color: #676767;}
+footer p:hover > a {color: #F4BF4F;}
+.author { padding: 0px;}
+
+
+
+
+
+/*GAME*/
+
+
+#gameContainer {
+    color: #FFFFFF;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#gameLanguage {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#gameReset {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#gameBoard {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    min-height: 60px;
+}
+
+#gameGibbet {
+    float: left;
+    width: 50%;
+    text-align: center;
+    min-height: 280px;
+}
+
+#gameAlphabet {
+    float: left;
+    width: 50%;
+    text-align: center;
+    min-height: 280px;
+}
+
+.letter {
+    font-size: 22px;
+    width: 30px;
+    height: 30px;
+    text-align:center;
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid gray;
+    float: left;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.letter:hover {
+    background-color: #222222;
+    color: white;
+    border: 3px solid white;
+}
+
+.reset {
+    color: #F4BF4F;
+    cursor: pointer;
+    font-size: 48px;
+}
+
+.reset:hover {
+    color: #FFFFFF;
+}
+
+.okGame {
+    color: #F4BF4F;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.okGame:hover {
+    color: #FFFFFF;
+}
+
+
+
+
+/* Screen
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 900px) {
+    #mainav ul {
+        display: none;
+    }
+    #mainav form {
+        display: block;
+    }
+    #gameGibbet {
+        float: none;
+    }
+    #gameAlphabet {
+        float: none;
+    }
+}
+
+
+@media screen and (max-width:750px){
+    .fl_left, .fl_right{display:block; float:none;}
+    #topbar{text-align: center;}
+    #topbar ul{margin:0 0 5px 0;}
+    #header{text-align:center;}
+    #gameGibbet {
+        width: 110%;
+    }
+    #gameAlphabet {
+        width: 110%;
+    }
+}
+
+
+@media screen and (max-width:450px){
+    #topbar ul li{margin-bottom:10px;}
+    #header {padding: 0px 0px 0px 3px;}
+}
